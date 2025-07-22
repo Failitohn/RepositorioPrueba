@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Read (Leer)</title>
+	<link rel="stylesheet" href="">
+	<script>
+        function ring(){
+            //console.log("Funcion de confirmación");
+            return confirm("¿Desea buscar la información sobre la comida?");
+        }
+    </script>
+</head>
+<body>
+
+	<form action="r.php" method="POST" accept-charset="utf-8" onsubmit="return ring();">
+		<label><strong>Registro de Comidas</strong></label><br>
+		<label id="idcomida">ID:</label>
+        <input type="text" name="idcomida"><br>
+        	 
+
+         <button type="submit" id="buscarcomida">Buscar</button>
+         <?php
+        //obtenemos el valor del parametro
+        if (isset($_GET['msg'])){
+            echo htmlspecialchars($_GET['msg']);
+        }
+    ?>
+        
+</body>
+</html>
