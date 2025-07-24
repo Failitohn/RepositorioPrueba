@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', 'Segoe UI', Tahoma, sans-serif;
+    background-color: #eef2f5;
+    padding: 60px 20px;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 40px;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    border-left: 6px solid #0d6efd;
+    transition: box-shadow 0.3s ease;
+}
+
+form:hover {
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+}
+
+form > label:first-of-type {
+    font-size: 20px;
+    font-weight: 600;
+    color: #0d6efd;
+    margin-bottom: 10px;
+    display: block;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 25px;
+    font-size: 15px;
+    color: #333;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    transition: border-color 0.2s ease;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #0d6efd;
+    background-color: #fff;
+}
+
+/* --- BOTONES CRUD --- */
+button[type="submit"] {
+    padding: 12px 20px;
+    margin-top: 35px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+/* Create */
+#enviarcomida {
+    background-color: #198754;
+}
+#enviarcomida:hover {
+    background-color: #157347;
+}
+
+/* Delete */
+#eliminarcomida {
+    background-color: #dc3545;
+}
+#eliminarcomida:hover {
+    background-color: #bb2d3b;
+}
+
+#buscarcomida {
+    background-color: #0d6efd;
+}
+#buscarcomida:hover {
+    background-color: #0a58ca;
+}
+
+#actualizarcomida {
+    background-color: #fd7e14;
+}
+#actualizarcomida:hover {
+    background-color: #e96b0a;
+}
+
+.mensaje-php {
+    margin-top: 30px;
+    padding: 12px;
+    background-color: #eaf4ff;
+    border: 1px solid #b3d7ff;
+    color: #0b5ed7;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 6px;
+}
